@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+
+table,th,td,tr{
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+
+tr th{
+  font-weight: 600;
+  text-transform: capitalize;
+}
