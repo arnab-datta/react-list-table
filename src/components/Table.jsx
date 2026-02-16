@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 function Table() {
   const [userList, setUserList] = useState([]);
+  const hasFetched = useRef(false);
 
   const getUserData = async () => {
     try {
@@ -14,7 +15,9 @@ function Table() {
   };
 
   useEffect(() => {
+    if (hasFetched.current) return;
     getUserData();
+    hasFetched.current = true;
   }, []);
   return (
     <div>
