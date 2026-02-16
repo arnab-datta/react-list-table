@@ -1,7 +1,7 @@
 import { useState } from "react";
-import FrontendPagination from "./components/FrontendPagination";
-import BackendPagination from "./components/BackendPagination";
-import Table from "./components/Table";
+import FrontendPagination from "./components/FrontendPagination/FrontendPagination";
+import BackendPagination from "./components/BackendPagination/BackendPagination";
+import Table from "./components/Table/Table";
 import "./App.css";
 
 function App() {
